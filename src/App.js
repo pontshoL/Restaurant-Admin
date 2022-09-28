@@ -1,24 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import HomeAdmin from './Components/homeAdmin';
+import AddMeal from './Components/AddMeal';
+import {BrowserRouter , Routes , Route } from 'react-router-dom';
+import Login from './Components/login';
+import SignUp from './Components/signup';
+import OrderList from './Components/listOfOrders';
+import Dash from './dash';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+       <Routes>
+          {/* <Route exact path ='/' element={<Dash />}></Route> */}
+          <Route exact path ='/' element={<Login />}></Route>
+          <Route exact path ='/sign-up' element={<SignUp />}></Route>
+          <Route exact path ='/home' element={<HomeAdmin />}></Route>
+          <Route exact path ='/addmeal' element={<AddMeal />}></Route>
+          <Route exact path ='/list' element={<OrderList />}></Route>
+       </Routes>
+    </BrowserRouter>
+</div>
   );
 }
 

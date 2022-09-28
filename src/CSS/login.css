@@ -1,0 +1,34 @@
+.SubCon>input{
+    width: 350px;
+    height: 50px;
+    background-color: white;
+    /*border: none;*/
+    padding-left: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border-color: cadetblue;
+    font-size: 16px;
+}
+
+.SubCon>button{
+    padding-left: 15px;
+    margin-top: 45px;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    /*border: none;*/
+    border-color: cadetblue;
+    font-size: 16px;
+}
+h1{
+    font-size: 25px;
+    color: orange;
+}
+
+span{
+    color: orange;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
